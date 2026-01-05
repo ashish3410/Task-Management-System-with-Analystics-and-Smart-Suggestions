@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 6s infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delay {
+    animation: float 6s ease-in-out infinite 3s;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-shake {
+    animation: shake 0.3s ease-in-out;
+  }
+
+  .animate-text-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 5px #9f7aea; }
+  50% { text-shadow: 0 0 15px #9f7aea; }
+}
+
+
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 6s infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delay {
+    animation: float 6s ease-in-out infinite 3s;
+  }
+
+  .animate-text-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 5px #9f7aea; }
+  50% { text-shadow: 0 0 15px #9f7aea; }
+}
