@@ -1,6 +1,9 @@
 import axios from 'axios';
+
+const isDevelopment = import.meta.env.MODE === 'development';
+const mybaseUrl = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.meta.env.VITE_API_BASE_URL_DEPLOY;
 const API=axios.create({
-    baseURL:'http://127.0.0.1:8000/api/',
+    baseURL: mybaseUrl,
 });
 API.interceptors.response.use(
   res => res,
