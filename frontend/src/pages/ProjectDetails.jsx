@@ -150,7 +150,7 @@ export default function ProjectDetails() {
           focus:border-violet-500 focus:ring-2 focus:ring-violet-500/40"
             />
           </div>
-          <TaskList tasks={filteredTasks} refresh={{loadTasks, setLoadStats}} />
+          <TaskList tasks={filteredTasks} loadTasks={loadTasks} setLoadStats={setLoadStats} />
 
           {showModal && (
             <AddTaskModal

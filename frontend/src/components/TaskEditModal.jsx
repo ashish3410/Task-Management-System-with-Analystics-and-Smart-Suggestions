@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TaskEditModal = ({ task, isOpen, onClose, onSave,setloadSates }) => {
+const TaskEditModal = ({ task, isOpen, onClose, onSave, setLoadStats }) => {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -27,7 +27,7 @@ const TaskEditModal = ({ task, isOpen, onClose, onSave,setloadSates }) => {
 
   const saveHandler = () => {
     onSave(formData);
-    setloadSates(prev => !prev);
+    setLoadStats(prev => !prev);  // ✅ typo fix: setLoadStat → setLoadStats
     onClose();
   };
 

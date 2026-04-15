@@ -113,10 +113,8 @@ export default function TaskList({ tasks, loadTasks, setLoadStats}) {
         isOpen={!!selectedTask}
         task={selectedTask}
         onClose={() => setSelectedTask(null)}
-        onSave={(data) =>
-          handleUpdateTask(selectedTask.id, data)
-        }
-        setLoadStats={()=>setLoadStats()}
+        onSave={(data) => handleUpdateTask(selectedTask.id, data)}
+        setLoadStats={setLoadStats}
       />
 
       {/* DELETE MODAL */}

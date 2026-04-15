@@ -6,7 +6,7 @@ import AISuggesstions from "../components/AISuggesstions";
 import ProgressBar from "../components/ProgressBar";
 import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     return (
         <div className="min-h-screen bg-linear-to-br from-black via-slate-900 to-indigo-900 text-white flex flex-col">
             {/* Top Navbar */}
@@ -53,9 +53,9 @@ const Dashboard = () => {
                                 </div>
                             </div>
                             <button className="px-4 py-3 flex justify-center items-center bg-indigo-600 rounded-sm " accordion
-                            onClick={()=>navigate('/projects')}
+                                onClick={() => navigate('/projects')}
                             >Show All Projects</button>
-                            <ProgressBar/>
+                            <ProgressBar />
                             {/* Placeholder for charts or more analytics */}
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl shadow-lg relative overflow-hidden">
                                 <div className="absolute -right-10 -top-10 w-40 h-40 bg-indigo-600/20 blur-3xl rounded-full" />
